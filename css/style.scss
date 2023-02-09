@@ -1,0 +1,141 @@
+@import "_global";
+@import "_reset";
+@import "_font";    
+@import "_color";
+
+// Reuse setup:
+.basic-font-setup {
+    font-family: $main-font;
+    font-size: $regular-font-size;
+}
+
+.header-font-setup {
+    font-family: $main-font;
+    font-size: $header-font-size;
+}
+
+// INDEX
+.general-wrapper {
+    max-width: $general-container-width;
+    height: auto;
+    margin: auto;
+    background-color: $primary_2;
+    padding-top: 50px;
+    
+    header {
+        max-width: $center-container-width;
+        height: 100px;
+        background-color: $primary_1;
+        color: $white-color;
+        text-align: center;
+        border-radius: 30px;
+        margin: 0 auto 50px auto;
+
+        h1 {
+            @extend .header-font-setup;
+            text-transform: uppercase;
+            line-height: 100px;
+        }
+    }
+
+    main {
+        max-width: $center-container-width;
+        height: auto;
+        margin: auto;
+
+        #task-adding {
+            width: 100%;
+            height: 75px;
+            margin-bottom: 25px;
+            
+            input {
+                @extend .basic-font-setup;
+                width: 90%;
+                height: 100%;
+                float: left;
+                border: none;
+                padding-left: 30px;
+
+                &::placeholder {
+                    @extend .basic-font-setup;
+                }
+            }
+
+            button {
+                width: 10%;
+                height: 100%;
+                border: none;
+                position: relative;
+
+                #overlaid {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $white-color;
+                    opacity: 0.6;
+                    display: block;
+                }
+
+                i {
+                    background-color: $primary_1;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 75px;
+                    cursor: pointer;
+                    font-size: $regular-font-size * 2;
+                    color: $white-color;
+                }
+            }
+        }
+
+        #task-listing {
+            width: 100%;
+            max-height: 400px;
+            height: 400px;
+            overflow: auto;
+
+            .task {
+                width: 100%;
+                height: auto;
+
+                a {
+                    text-decoration: none;
+                    width: 5%;
+                    text-align: center;
+                    float: left;
+                    color: $primary_1;
+                    font-size: $regular-font-size * 1.5;
+                    height: auto;
+                }
+
+                p {
+                    @extend .basic-font-setup;
+                    max-width: 1080px;
+                    width: 95%;
+                    float: left;
+                    padding: 10px 0 10px 25px;
+                    background-color: $white-color;
+                }
+            }
+        }
+    }
+
+    footer {
+        max-width: $general-container-width;
+        height: auto;
+        background-color: $primary_3;
+
+        #footer-container {
+            max-width: $center-container-width;
+            height: auto;
+            margin: auto;
+            text-align: center;
+
+            p {
+                @extend .basic-font-setup;
+            }
+        }
+    } 
+}

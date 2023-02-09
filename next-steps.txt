@@ -1,0 +1,5 @@
+- text quá dài bị tràn
+- Tối ưu hóa js bằng cách phân function ra
+
+- Gắn database vào (MySQL)
+- Dùng PHP

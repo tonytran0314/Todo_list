@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.general-wrapper main #task-adding input::-moz-placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.basic-font-setup, .general-wrapper footer #footer-container p, .general-wrapper main #task-listing .task p, .general-wrapper main #task-adding input::placeholder, .general-wrapper main #task-adding input {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.header-font-setup, .general-wrapper header h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 50px;
+}
+
+.general-wrapper {
+  max-width: 1440px;
+  height: auto;
+  margin: auto;
+  background-color: #DDF2F4;
+  padding-top: 50px;
+}
+.general-wrapper header {
+  max-width: 1140px;
+  height: 100px;
+  background-color: #4382BB;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 auto 50px auto;
+}
+.general-wrapper header h1 {
+  text-transform: uppercase;
+  line-height: 100px;
+}
+.general-wrapper main {
+  max-width: 1140px;
+  height: auto;
+  margin: auto;
+}
+.general-wrapper main #task-adding {
+  width: 100%;
+  height: 75px;
+  margin-bottom: 25px;
+}
+.general-wrapper main #task-adding input {
+  width: 90%;
+  height: 100%;
+  float: left;
+  border: none;
+  padding-left: 30px;
+}
+.general-wrapper main #task-adding button {
+  width: 10%;
+  height: 100%;
+  border: none;
+  position: relative;
+}
+.general-wrapper main #task-adding button #overlaid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.6;
+  display: block;
+}
+.general-wrapper main #task-adding button i {
+  background-color: #4382BB;
+  width: 100%;
+  height: 100%;
+  line-height: 75px;
+  cursor: pointer;
+  font-size: 40px;
+  color: #ffffff;
+}
+.general-wrapper main #task-listing {
+  width: 100%;
+  max-height: 400px;
+  height: 400px;
+  overflow: auto;
+}
+.general-wrapper main #task-listing .task {
+  width: 100%;
+  height: auto;
+}
+.general-wrapper main #task-listing .task a {
+  text-decoration: none;
+  width: 5%;
+  text-align: center;
+  float: left;
+  color: #4382BB;
+  font-size: 30px;
+  height: auto;
+}
+.general-wrapper main #task-listing .task p {
+  max-width: 1080px;
+  width: 95%;
+  float: left;
+  padding: 10px 0 10px 25px;
+  background-color: #ffffff;
+}
+.general-wrapper footer {
+  max-width: 1440px;
+  height: auto;
+  background-color: #84A6D6;
+}
+.general-wrapper footer #footer-container {
+  max-width: 1140px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
